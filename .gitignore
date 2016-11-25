@@ -5,6 +5,13 @@ ehthumbs.db
 # Folder config file
 Desktop.ini
 
+# Log files
+*.log
+
+# By products
+.vagrant
+kubernete-master-token.txt
+
 # Recycle Bin used on file shares
 $RECYCLE.BIN/
 
