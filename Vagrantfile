@@ -12,6 +12,16 @@ Vagrant.configure("2") do |config|
 
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://atlas.hashicorp.com/search.
+  config.vm.define "control" do |control|
+    control.vm.box = "ubuntu/xenial64"
+    control.vm.provision "shell", "inline": <<-SHELL
+      sudo apt-get install -y software-properties-common
+      sudo apt-add-repository ppa:ansible/ansible
+      sudo apt-get update
+      sudo apt-get install -y ansible
+    SHELL
+  end
+
   config.vm.define "master" do |master|
     master.vm.box = "ubuntu/xenial64"
   end
