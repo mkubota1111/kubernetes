@@ -1,0 +1,2 @@
+[k8s-master]
+atomic-01 ansible_ssh_host=198.168.0.3
