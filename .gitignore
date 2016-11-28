@@ -10,7 +10,7 @@ Desktop.ini
 
 # By products
 .vagrant
-kubernete-master-token.txt
+token.txt
 
 # Recycle Bin used on file shares
 $RECYCLE.BIN/
